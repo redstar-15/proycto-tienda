@@ -1,0 +1,56 @@
+.btn-volver {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-volver:hover {
+  opacity: 0.9;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.formulario-producto,
+.formulario-categoria {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenedor-btnvolver{
+   display: flex;
+  margin-top: 40px;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}

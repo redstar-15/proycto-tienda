@@ -1,0 +1,120 @@
+/* Fondo de la página */
+.pagina-carrito{
+    min-height: 100vh;
+    background: #f4f6f9;
+    padding: 40px;
+}
+
+/* Título */
+.titulo-carrito{
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+/* Contenedor de todos los productos */
+.lista-carrito{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Tarjeta de cada producto */
+.card-carrito{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 12px rgba(0,0,0,.12);
+}
+
+/* Información */
+.info-producto h3{
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.info-producto p{
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Cantidad */
+.controles{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.controles button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.controles button:hover{
+    background: #1d4ed8;
+}
+
+/* Número de productos */
+.cantidad{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Botón eliminar */
+.btn-eliminar{
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-eliminar:hover{
+    background: #b91c1c;
+}
+
+/* Total */
+.total{
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,.12);
+    text-align: right;
+}
+
+.total h2{
+    color: #1f2937;
+}
+
+/* Botón comprar */
+.btn-comprar{
+    margin-top: 15px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.btn-comprar:hover{
+    background: #15803d;
+}

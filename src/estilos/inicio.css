@@ -1,0 +1,46 @@
+.seccion-titulo {
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
+
+.seccion-titulo h1 {
+  font-size: 3rem;
+  color:black;
+}
+
+.seccion-opciones {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  align-items: center;
+}
+
+.contenedor-botones {
+  display: flex;
+  margin-top: 40px;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-botones button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-menu {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-menu:hover {
+  opacity: 0.9;
+}

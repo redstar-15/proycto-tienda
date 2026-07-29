@@ -1,0 +1,120 @@
+/* Fondo de la página */
+.pagina-tienda{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Encabezado */
+.header-tienda{
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-tienda h1{
+    margin: 0;
+}
+
+.header-tienda div{
+    display: flex;
+    gap: 15px;
+}
+
+/* Botones del encabezado */
+.btn{
+    text-decoration: none;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #1d4ed8;
+}
+
+/* Buscador */
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.buscador input{
+    width: 500px;
+    max-width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Contenedor de productos */
+
+.contenedor-productos{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+/* Tarjeta */
+
+.card-producto{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+
+    transition: .3s;
+}
+
+.card-producto:hover{
+    transform: translateY(-5px);
+}
+
+.card-producto h3{
+    margin-top: 0;
+}
+
+.card-producto h4{
+    color: #16a34a;
+    margin: 15px 0;
+}
+
+.card-producto button{
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.card-producto button:hover{
+
+    background-color: #15803d;
+
+}

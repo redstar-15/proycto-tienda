@@ -1,0 +1,171 @@
+/* Página */
+
+.pagina-login{
+
+    min-height: 100vh;
+
+    background: linear-gradient(135deg,#2563eb,#1e40af);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+/* Título */
+
+.titulo-login{
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+.titulo-login h1{
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+.titulo-login p{
+
+    font-size: 18px;
+
+    color: #dbeafe;
+
+}
+
+/* Tarjeta */
+
+.formulario-sesion form{
+
+    background: white;
+
+    width: 420px;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+/* Inputs */
+
+.formulario-sesion input{
+
+    height: 50px;
+
+    padding-left: 15px;
+
+    font-size: 17px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+.formulario-sesion input:focus{
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 5px rgba(37,99,235,.4);
+
+}
+
+/* Botón */
+
+.btn-sesion{
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.btn-sesion:hover{
+
+    background: #1d4ed8;
+
+    transform: scale(1.02);
+
+}
+
+/* Texto */
+
+.texto-registro{
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: -10px;
+
+}
+
+.link-registro{
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+}
+
+.link-registro:hover{
+
+    text-decoration: underline;
+
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .formulario-sesion form{
+
+        width: 90%;
+
+        padding: 30px;
+
+    }
+
+}
