@@ -5,13 +5,14 @@ import { jwtDecode } from "jwt-decode";
 const API_URL = import.meta.env.VITE_API_URL
 const token = localStorage.getItem("token");
 
+
 function Home_tienda() {
 
     const [productos, setProductos] = useState([]);
     const [carrito, setcarrito] = useState([])
     const [usuario, setusuario] = useState(null);
     const navigate = useNavigate();
-    
+    console.log(import.meta.env.VITE_API_URL);
 
     useEffect(() => {
         obtenerProductos();

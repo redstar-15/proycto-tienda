@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "../estilos/registro.css"
+import "../estilos/registro.css";
+import { jwtDecode } from "jwt-decode";
 const API_URL = import.meta.env.VITE_API_URL
 
 function Registro(){
@@ -9,6 +10,8 @@ function Registro(){
     const [correoUsuario, setcorreoUsuario] = useState("");
     const [contrasenaUsuario, setcontrasenaUsuario] = useState("");
     const [contrasenaUsuarioRe, setcontrasenaUsuarioRe] = useState("");
+
+    const navigate =  useNavigate();
 
 
     async function registrarUsuario (e){
@@ -37,8 +40,21 @@ function Registro(){
            
 
             const data = await respuesta.json();
+            console.log(data);
+
+            localStorage.setItem(
+                "token",
+                data.token
+            );
+            
+            const usuario = jwtDecode(data.token);
+            
+            console.log(usuario);
             alert(data.mensaje);
 
+            if (usuario.rol ==="cliente"){
+                navigate("/")
+            }
             setnombreUsuario("")
             setcorreoUsuario("")
             setcontrasenaUsuario("")
