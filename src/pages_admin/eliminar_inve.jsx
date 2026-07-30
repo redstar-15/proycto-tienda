@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../estilos/eliminar.css"
 import { useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL
 
 function Eliminar(){
     const [idProducto, setIdProducto] = useState("");
@@ -12,7 +13,7 @@ function Eliminar(){
          try {
 
             const respuesta = await fetch(
-            `http://localhost:3000/productos/${idProducto}`,
+            `${API_URL}/productos/${idProducto}`,
             {
                 method: "DELETE",
                 headers: {
@@ -38,7 +39,7 @@ function Eliminar(){
          try {
 
             const respuesta = await fetch(
-            `http://localhost:3000/categorias/${idCategoria}`,
+            `${API_URL}/categorias/${idCategoria}`,
             {
                 method: "DELETE",
                  headers: {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../estilos/carrito.css"
+const API_URL = import.meta.env.VITE_API_URL
 
 function Carrito () {
 
@@ -13,7 +14,7 @@ function Carrito () {
         try {
 
             const respuesta = await fetch(
-                `http://localhost:3000/carrito`,
+                `${API_URL}/carrito`,
                 {
                     headers:{
                         Authorization: `Bearer ${token}`
@@ -67,7 +68,7 @@ function Carrito () {
         try {
 
             const respuesta = await fetch(
-                `http://localhost:3000/carrito/${id}`,
+                `${API_URL}/carrito/${id}`,
                 {
                     method: "PUT",
                     headers: {
@@ -103,7 +104,7 @@ function Carrito () {
         try{
 
             const respuesta = await fetch(
-                `http://localhost:3000/carrito/${id}`,
+                `${API_URL}/carrito/${id}`,
                 {
                     method: "delete",
                     headers:{
@@ -130,7 +131,7 @@ function Carrito () {
         try {
 
             const respuesta = await fetch(
-                `http://localhost:3000/carrito/finalizar/${carritoId}`,
+                `${API_URL}/carrito/finalizar/${carritoId}`,
                 {
                     method: "PUT",
                     headers:{

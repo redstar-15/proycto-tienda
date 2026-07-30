@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../estilos/login.css"
 import { useState } from "react";
 import { jwtDecode } from "jwt-decode";
+const API_URL = import.meta.env.VITE_API_URL
 
 function Login () {
 
@@ -15,7 +16,7 @@ function Login () {
 
         try{
             const respuesta = await fetch(
-                "http://localhost:3000/login",
+                `${API_URL}/login`,
                 {
                     method: "POST",
                     headers:{

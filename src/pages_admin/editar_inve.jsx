@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../estilos/editar.css"
+const API_URL = import.meta.env.VITE_API_URL
 
 function Editar(){
     const [idProducto, setIdProducto] = useState("");
@@ -18,7 +19,7 @@ function Editar(){
        try {
 
             const respuesta = await fetch(
-            `http://localhost:3000/productos/${idProducto}`,
+            `${API_URL}/productos/${idProducto}`,
             {
                 method: "PUT",
                 headers: {
@@ -51,7 +52,7 @@ function Editar(){
         try {
 
             const respuesta = await fetch(
-            `http://localhost:3000/categorias/${idCategoria}`,
+            `${API_URL}/categorias/${idCategoria}`,
             {
                 method: "PUT",
                 headers: {
@@ -80,7 +81,7 @@ function Editar(){
 
     async function buscarProducto() {
         const respuesta = await fetch(
-            `http://localhost:3000/productos/${idProducto}`,
+            `${API_URL}/productos/${idProducto}`,
             {
                 headers: {
                 "Authorization": `Bearer ${token}`
@@ -99,7 +100,7 @@ function Editar(){
 
     async function buscarCategoria() {
        const respuesta = await fetch(
-        `http://localhost:3000/categorias/${idCategoria}`,
+        `${API_URL}/categorias/${idCategoria}`,
         {
             headers: {
                 "Authorization": `Bearer ${token}`

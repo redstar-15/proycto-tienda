@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../estilos/registro.css"
+const API_URL = import.meta.env.VITE_API_URL
 
 function Registro(){
 
@@ -20,7 +21,7 @@ function Registro(){
 
         try{
             const respuesta = await fetch(
-                "http://localhost:3000/registro",
+                `${API_URL}/registro`,
                 {
                     method: "POST",
                     headers:{

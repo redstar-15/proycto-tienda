@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../estilos/tienda.css";
 import { jwtDecode } from "jwt-decode";
+const API_URL = import.meta.env.VITE_API_URL
 
 function Home_tienda() {
 
@@ -21,7 +22,7 @@ function Home_tienda() {
 
         try {
 
-            const respuesta = await fetch("http://localhost:3000/productos");
+            const respuesta = await fetch(`${API_URL}/productos`);
 
             const data = await respuesta.json();
 
@@ -44,7 +45,7 @@ function Home_tienda() {
         try{
 
             const respuesta = await fetch(
-                "http://localhost:3000/carrito",
+                `${API_URL}/carrito`,
                 {
                     method:"POST",
                     headers:{

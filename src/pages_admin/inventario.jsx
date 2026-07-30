@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../estilos/inventario.css"
+import "../estilos/inventario.css";
+const API_URL = import.meta.env.VITE_API_URL
 
 function Ver_inventario() {
 
@@ -13,7 +14,7 @@ function Ver_inventario() {
     async function obtenerProductos() {
       try{
         const respuesta = await fetch(
-          "http://localhost:3000/productos"
+          `${API_URL}/productos`
         );
 
         const data = await respuesta.json();

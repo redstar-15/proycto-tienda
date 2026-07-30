@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "../estilos/anadir.css"
+const API_URL = import.meta.env.VITE_API_URL
 
 
 function Anadir_inve (){
@@ -20,7 +21,7 @@ function Anadir_inve (){
     async function obtenerCategorias() {
 
         const respuesta = await fetch(
-            "http://localhost:3000/categorias"
+            `${API_URL}/categorias`
         );
 
         const data = await respuesta.json();
@@ -52,7 +53,7 @@ function Anadir_inve (){
 
         try{
             const respuesta = await fetch(
-                "http://localhost:3000/productos",
+                `${API_URL}/productos`,
                 {
                     method: "POST",
                     headers:{
@@ -96,7 +97,7 @@ function Anadir_inve (){
         try{
 
             const respuesta = await fetch(
-            "http://localhost:3000/categorias",
+            `${API_URL}/categorias`,
             {
                 method: "POST",
                 headers: {

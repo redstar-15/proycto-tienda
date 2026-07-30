@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "../estilos/inicio.css"
+import "../estilos/inicio.css";
+const API_URL = import.meta.env.VITE_API_URL
 
 function Inicio(){
 
-    //const navigate = useNavigate();
     return(
         <>
 
