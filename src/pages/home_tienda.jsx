@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "../estilos/tienda.css";
 import { jwtDecode } from "jwt-decode";
 const API_URL = import.meta.env.VITE_API_URL
+const token = localStorage.getItem("token");
 
 function Home_tienda() {
 
@@ -18,7 +19,7 @@ function Home_tienda() {
 
     async function obtenerProductos() {
 
-        const token = localStorage.getItem("token");
+        
 
         try {
 
