@@ -19,7 +19,7 @@ const carrito = require("./routes/carrito");
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://proycto-tienda.vercel.app/"
+    process.env.FRONTEND_URL
   ]
 }));
 app.use(express.json());
