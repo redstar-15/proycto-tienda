@@ -16,7 +16,12 @@ const iniciarSesion = require("./routes/login");
 // carrito
 const carrito = require("./routes/carrito");
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://proycto-tienda.vercel.app/"
+  ]
+}));
 app.use(express.json());
 
 
