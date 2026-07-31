@@ -40,7 +40,7 @@ function Registro(){
            
 
             const data = await respuesta.json();
-            console.log(data);
+            
 
             localStorage.setItem(
                 "token",
@@ -53,6 +53,7 @@ function Registro(){
             alert(data.mensaje);
 
             if (usuario.rol ==="cliente"){
+                window.location.href = "/";
                 navigate("/")
             }
             setnombreUsuario("")
